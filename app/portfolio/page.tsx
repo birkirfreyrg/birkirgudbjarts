@@ -4,11 +4,9 @@ import Wrapper from "../components/Wrapper";
 
 export default function page() {
   return (
-    <>
-      <Wrapper>
-        <Title title="Bio" />
-        <Nav />
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Title title="Portfolio" />
+      <Nav />
+    </Wrapper>
   );
 }

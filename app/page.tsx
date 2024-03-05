@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Wrapper>
-        <Title />
+        <Title title="Birkir Freyr Guðbjartsson" />
         <Nav />
         <div className=" mt-14">
           <Image
