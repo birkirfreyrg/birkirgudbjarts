@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Nav() {
-  const [displayPath, setDisplayPath] = useState("/");
   const current = usePathname();
   const underline = "border-b border-gray-300";
 
@@ -22,7 +21,7 @@ export default function Nav() {
       </Link>
       <Link
         href={"/portfolio"}
-        className={`${current === "portfolio" ? underline : ""}`}
+        className={`${current === "/portfolio" ? underline : ""}`}
       >
         portfolio
       </Link>
