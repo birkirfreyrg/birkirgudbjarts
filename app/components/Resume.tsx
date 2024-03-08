@@ -7,7 +7,7 @@ import SmallHeader from "./SmallHeader";
 
 export default function Resume() {
   return (
-    <div className="border shadow-lg flex flex-col justify-center p-2 w-3/4">
+    <div className="border shadow-lg flex flex-col justify-center p-2 w-1/2 mb-6">
       <div className="ml-1">
         <SmallHeader text="Education" />
       </div>
@@ -68,6 +68,43 @@ export default function Resume() {
           </a>
         </BorderedText>
       </div>
+      <div className="ml-1">
+        <MediumText text="Hobbies" />
+      </div>
+      <BorderedText>
+        Passionate about computer architecture, programming, and
+        problem-solving. Enthusiastic video game player. Dedicated and enjoy
+        various forms of physical exercise and movement.
+      </BorderedText>
+      <div className="ml-1">
+        <MediumText text="Strengths" />
+      </div>
+      <BorderedText>
+        Positive, diligent, punctual, and energetic team player. Adaptable to
+        new environments and challenges. Detail-oriented and patient problem
+        solver.
+      </BorderedText>
+      <div className="ml-1">
+        <MediumText text="References" />
+      </div>
+      <BorderedText>
+        <p>
+          - Anna Ósk Óskarsdóttir - Manager Isal, Rio Tinto. - Phone: 898-1447
+        </p>
+        <p>
+          - Guðmundur Stefán Gunnarsson - Founder Júdódeild UMFN and Chairman of
+          Wrestling Federation of Iceland (Glímusamband Íslands) - Phone:
+          773-8091
+        </p>
+        <p>
+          - Ljósbrá Mist Bjarnadóttir - Co-owner of Orkustöð Heilsurækt - Phone:
+          692-7058
+        </p>
+        <p>
+          - Sigurbjörg Gunnarsdóttir - CEO of Hreyfisports and Co-owner of
+          Orkustöð Heilsurækt - Phone: 847-7922
+        </p>
+      </BorderedText>
     </div>
   );
 }
