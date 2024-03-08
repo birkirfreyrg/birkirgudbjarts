@@ -12,7 +12,7 @@ export default function Home() {
         <Nav />
         <div className=" flex flex-col justify-center items-center mt-14">
           <Image
-            className=" h-3/6"
+            className=" h-3/6 mb-14"
             src="/gradpic.jpg"
             alt="Picture of me"
             width={500}
