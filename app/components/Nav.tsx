@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const current = usePathname();
-  const underline = "border-b border-gray-300 font-medium";
+  const underline = "border-b border-gray-300 font-light";
 
   return (
     <div className="flex items-center justify-center gap-4 sm:gap-3 text-xl mt-8">

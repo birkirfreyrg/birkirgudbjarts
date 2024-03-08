@@ -4,10 +4,11 @@ import Bullets from "./Bullets";
 import Job from "./Job";
 import MediumText from "./MediumText";
 import SmallHeader from "./SmallHeader";
+import References from "./References";
 
 export default function Resume() {
   return (
-    <div className="border shadow-lg flex flex-col justify-center p-2 w-1/2 mb-6">
+    <div className="border shadow-lg flex flex-col justify-center p-2 w-11/12 sm:w-1/2 mb-6">
       <div className="ml-1">
         <SmallHeader text="Education" />
       </div>
@@ -88,22 +89,7 @@ export default function Resume() {
         <MediumText text="References" />
       </div>
       <BorderedText>
-        <p>
-          - Anna Ósk Óskarsdóttir - Manager Isal, Rio Tinto. - Phone: 898-1447
-        </p>
-        <p>
-          - Guðmundur Stefán Gunnarsson - Founder Júdódeild UMFN and Chairman of
-          Wrestling Federation of Iceland (Glímusamband Íslands) - Phone:
-          773-8091
-        </p>
-        <p>
-          - Ljósbrá Mist Bjarnadóttir - Co-owner of Orkustöð Heilsurækt - Phone:
-          692-7058
-        </p>
-        <p>
-          - Sigurbjörg Gunnarsdóttir - CEO of Hreyfisports and Co-owner of
-          Orkustöð Heilsurækt - Phone: 847-7922
-        </p>
+        <References />
       </BorderedText>
     </div>
   );

@@ -2,7 +2,7 @@ export default function Bullets() {
   const bullet = "h-2 w-2 bg-black rounded-full mr-3";
   return (
     <div>
-      <ul className="mt-1 ml-14">
+      <ul className="mt-1 sm:ml-8">
         <li className="flex items-center mb-2">
           <span className={`${bullet}`}></span>
           <span className="flex-1">Java, C, C++, C#, Python.</span>
