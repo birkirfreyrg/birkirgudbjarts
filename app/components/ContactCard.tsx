@@ -9,15 +9,15 @@ import Facebook from "../components/Facebook";
 
 export default function ContactCard() {
   return (
-    <div className="flex items-center justify-center w-full h-full gap-1 mt-14">
-      <div className="flex flex-wrap items-center justify-center bg-gray-800 w-2/4 h-96 text-white text-lg">
-        <div className="flex flex-col items-center justify-center w-1/2 h-1/2">
+    <div className="flex items-center justify-center w-full h-full sm:gap-1 mt-14">
+      <div className="flex flex-wrap items-center justify-center bg-gray-800 w-11/12 sm:w-2/4 h-[600px] text-white text-lg">
+        <div className="flex flex-col items-center justify-center w-full h-1/4 sm:w-1/2 sm:h-1/2 mt-2 sm:mt-0">
           <Address />
           <MediumText text="Address:" />
           <p>Nónhamar 6</p>
           <p>221 - Hafnarfjörður</p>
         </div>
-        <div className="flex flex-col items-center justify-center w-1/2 h-1/2 pb-6">
+        <div className="flex flex-col items-center justify-center w-full h-1/4 sm:w-1/2 sm:h-1/2 sm:pb-6">
           <Email />
           <MediumText text="Email:" />
           <p>
@@ -26,7 +26,7 @@ export default function ContactCard() {
             </a>
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center w-1/2 h-1/2">
+        <div className="flex flex-col items-center justify-center w-full h-1/4 sm:w-1/2 sm:h-1/2">
           <Phone />
           <MediumText text="Call me:" />
           <p>
@@ -34,7 +34,7 @@ export default function ContactCard() {
             <a href={"tel:3546908129"}>(+354) 690-8129</a>
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center w-1/2 h-1/2">
+        <div className="flex flex-col items-center justify-center w-full h-1/4 sm:w-1/2 sm:h-1/2">
           <Chat />
           <MediumText text="Social media:" />
           <div className="flex gap-3">
