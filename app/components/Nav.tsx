@@ -16,6 +16,12 @@ export default function Nav() {
         bio
       </Link>
       <Link
+        href={"/resume"}
+        className={`${current === "/resume" ? underline : ""}`}
+      >
+        resume
+      </Link>
+      <Link
         href={"/portfolio"}
         className={`${current === "/portfolio" ? underline : ""}`}
       >

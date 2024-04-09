@@ -1,9 +1,7 @@
-import Wrapper from "./Wrapper";
-
 export default function Bio() {
   return (
-    <Wrapper>
-      <h3 className="sm:w-2/5 w-11/12 mt-14 border p-2 shadow-lg mb-6">
+    <div className="flex justify-center items-center sm:w-1/2 w-full">
+      <h3 className="mt-14 border p-2 shadow-lg mb-6">
         <p className="mb-6">
           I am a highly skilled and motivated person with a Bachelor of Science
           in Computer Science from the University of Iceland. My academic and
@@ -50,6 +48,6 @@ export default function Bio() {
           further exploration under the portfolio tab or on GitHub.
         </p>
       </h3>
-    </Wrapper>
+    </div>
   );
 }

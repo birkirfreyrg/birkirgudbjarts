@@ -2,7 +2,6 @@ import Image from "next/image";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import Nav from "./components/Nav";
-import Resume from "./components/Resume";
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
       <Wrapper>
         <Title title="Birkir Freyr Guðbjartsson" />
         <Nav />
-        <div className=" flex flex-col justify-center items-center mt-14">
+        <div className=" flex flex-col justify-center items-center mt-14 w-full">
           <Image
             className=" h-3/6 mb-14 w-80 sm:w-2/5"
             src="/gradpic.jpg"
@@ -18,7 +17,6 @@ export default function Home() {
             width={500}
             height={300}
           ></Image>
-          <Resume />
         </div>
       </Wrapper>
     </>
