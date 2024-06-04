@@ -25,7 +25,7 @@ const ImageRightTextLeft: React.FC<ImageTextSplitProps> = ({
       rel="noopener noreferrer"
       className="flex gap-4 border p-2 shadow-md w-1/2 h-full cursor-pointer transition-opacity duration-500 ease-in-out hover:opacity-75 "
     >
-      <div className="flex flex-col w-full items-center">
+      <div className="flex flex-col justify-between w-full items-center h-96 overflow-auto">
         <h3 className=" font-extrabold text-2xl mb-1">{title}</h3>
         {/* Map over the textContent array and render each item as a paragraph */}
         {textContent.map((paragraph, index) => (

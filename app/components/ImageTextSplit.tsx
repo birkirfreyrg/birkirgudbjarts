@@ -36,7 +36,7 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
         />
       </div>
 
-      <div className="flex flex-col w-full items-center">
+      <div className="flex flex-col justify-between w-full items-center h-96 overflow-auto">
         <h3 className=" font-extrabold text-2xl mb-1">{title}</h3>
         {/* Map over the textContent array and render each item as a paragraph */}
         {textContent.map((paragraph, index) => (
