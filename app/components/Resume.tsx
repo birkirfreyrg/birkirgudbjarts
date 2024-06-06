@@ -1,8 +1,6 @@
-import Link from "next/link";
 import BorderedText from "./BorderedText";
 import Bullets from "./Bullets";
 import Job from "./Job";
-import MediumText from "./MediumText";
 import SmallHeader from "./SmallHeader";
 import References from "./References";
 
@@ -10,7 +8,7 @@ export default function Resume() {
   return (
     <div className="flex flex-col justify-center items-center sm:w-2/3 w-full p-4">
       <div className="bg-white shadow-md rounded-lg p-6">
-        <div className="mb-4">
+        <div className="">
           <SmallHeader text="Education" />
           <div className="ml-4 mt-1">
             <Job

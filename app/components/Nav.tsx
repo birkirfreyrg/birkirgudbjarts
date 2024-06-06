@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import HamburgerMenu from "./HamburgerMenu";
 
 export default function Nav() {
   const current = usePathname();
@@ -9,8 +8,8 @@ export default function Nav() {
 
   return (
     <>
-      <div className="flex items-center justify-center gap-4 sm:gap-3 text-xl mt-8">
-        <div className="hidden lg:flex items-center gap-4">
+      <div className="hidden md:flex items-center justify-center gap-4 text-xl mt-0 md:mt-8">
+        <div className=" flex items-center gap-4">
           <div className="border-b border-gray-300 sm:mx-4 w-12 sm:w-24" />
           <Link href={"/"} className={`${current === "/" ? underline : ""}`}>
             home

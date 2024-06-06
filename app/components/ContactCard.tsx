@@ -13,7 +13,7 @@ export default function ContactCard() {
       <div className="flex flex-wrap items-center justify-center bg-gray-800 w-11/12 sm:w-2/4 h-[600px] sm:h-96 text-white text-lg px-2">
         <div className="flex flex-col items-center justify-center w-full h-1/4 sm:w-1/2 sm:h-1/2 mt-2 sm:mt-0">
           <Address />
-          <MediumText text="Address:" />
+          <MediumText text="Location:" />
           <p>221 - Hafnarfjörður</p>
         </div>
         <div className="flex flex-col items-center justify-center w-full h-1/4 sm:w-1/2 sm:h-1/2 sm:pb-6">

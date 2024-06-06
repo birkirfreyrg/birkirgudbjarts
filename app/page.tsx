@@ -11,9 +11,9 @@ export default function Home() {
       <Wrapper>
         <Title title="Birkir Freyr Guðbjartsson" />
         <Nav />
-        <div className=" flex flex-col justify-center items-center mt-14 w-full">
+        <div className=" flex flex-col justify-center items-center mt-6 md:mt-14 w-full">
           <Image
-            className=" h-3/6 mb-14 w-80 sm:w-2/5"
+            className=" h-3/6 mb-14 w-5/6 md:w-2/5"
             src="/gradpic.jpg"
             alt="Picture of me"
             width={500}

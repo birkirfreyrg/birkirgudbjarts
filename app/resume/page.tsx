@@ -9,7 +9,7 @@ export default function page() {
     <>
       <HamburgerMenu />
       <Wrapper>
-        <Title title="Bio" />
+        <Title title="Resume" />
         <Nav />
         <div className=" flex justify-center items-center mt-14">
           <Resume />

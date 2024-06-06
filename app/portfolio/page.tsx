@@ -16,7 +16,7 @@ export default function page() {
       <Wrapper>
         <Title title="Portfolio" />
         <Nav />
-        <div className="flex flex-col gap-8 justify-center items-center w-full mt-14 mb-14">
+        <div className="flex flex-col gap-8 justify-center items-center w-full mt-14  mb-14">
           <ImageTextSplit
             imageUrl="/oceanViewPhoto.PNG"
             altText="OceanView"

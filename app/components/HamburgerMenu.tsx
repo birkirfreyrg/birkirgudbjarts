@@ -5,7 +5,7 @@ const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative lg:hidden">
+    <div className="relative md:hidden">
       {/* Hidden on large screens and above */}
       <button
         className="flex flex-col h-12 w-12 rounded justify-center items-center group"

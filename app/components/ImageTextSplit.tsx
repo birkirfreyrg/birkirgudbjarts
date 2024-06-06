@@ -1,7 +1,5 @@
-// ImageTextSplit.tsx
 import React from "react";
 import Image from "next/image"; // Import from next/image
-import Link from "next/link";
 
 interface ImageTextSplitProps {
   imageUrl: string;
@@ -23,10 +21,9 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex gap-4 border p-2 shadow-md w-1/2 h-full cursor-pointer transition-opacity duration-500 ease-in-out hover:opacity-75 "
+      className="flex flex-col md:flex-row gap-4 border p-2 shadow-md w-11/12 md:w-4/5 h-screen md:h-auto cursor-pointer transition-opacity duration-500 ease-in-out hover:opacity-75"
     >
-      <div className="flex justify-center items-center w-full min-h-96">
-        {/* Using next/image with layout="fill" and objectFit="cover" */}
+      <div className="order-2 md:order-1 gap-4 flex justify-center items-center w-full h-full md:h-auto">
         <Image
           src={imageUrl}
           alt={altText}
@@ -35,15 +32,16 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
           className="border shadow-md"
         />
       </div>
-
-      <div className="flex flex-col justify-between w-full items-center h-96 overflow-auto">
-        <h3 className=" font-extrabold text-2xl mb-1">{title}</h3>
+      <div className="order-1 md:order-2 flex flex-col justify-center items-center w-full h-full md:h-auto md:overflow-auto">
+        <h3 className="font-extrabold text-2xl mb-4">{title}</h3>
         {/* Map over the textContent array and render each item as a paragraph */}
-        {textContent.map((paragraph, index) => (
-          <p key={index} className="font-light mb-2">
-            {paragraph}
-          </p>
-        ))}
+        <div className="text-center">
+          {textContent.map((paragraph, index) => (
+            <p key={index} className="font-light mb-2">
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </div>
     </a>
   );
