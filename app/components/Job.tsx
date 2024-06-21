@@ -6,8 +6,8 @@ type JobProps = {
 
 export default function Job({ year, placeOfWork, jobTitle }: JobProps) {
   return (
-    <div className="border shadow-sm p-2 mb-2">
-      <h3>
+    <div className="font-light p-2 mb-2">
+      <div>
         <div className="flex ">
           <div className=" w-24">{year}</div>
           <div />
@@ -15,7 +15,7 @@ export default function Job({ year, placeOfWork, jobTitle }: JobProps) {
         </div>
 
         <p className="ml-24">{jobTitle}</p>
-      </h3>
+      </div>
     </div>
   );
 }

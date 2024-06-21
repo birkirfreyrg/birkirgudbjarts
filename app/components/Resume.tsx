@@ -8,7 +8,20 @@ export default function Resume() {
   return (
     <div className="flex flex-col justify-center items-center sm:w-2/3 w-full p-4">
       <div className="bg-white shadow-md rounded-lg p-6">
-        <div className="">
+        <div className="mb-4">
+          <SmallHeader text="About me" />
+          <div className="ml-4 mt-1">
+            <BorderedText>
+              I am an enthusiastic and dedicated Computer Scientist with a
+              strong background in programming, complemented by a passion for
+              physical fitness and jiu-jitsu. My interest in jiu- jitsu not only
+              keeps me physically active but also mentally sharp, enhancing my
+              problem- solving skills.
+            </BorderedText>
+          </div>
+        </div>
+
+        <div className="mb-4">
           <SmallHeader text="Education" />
           <div className="ml-4 mt-1">
             <Job
@@ -67,17 +80,6 @@ export default function Resume() {
               >
                 https://github.com/birkirfreyrg
               </a>
-            </BorderedText>
-          </div>
-        </div>
-
-        <div className="mb-4">
-          <SmallHeader text="Hobbies" />
-          <div className="ml-4 mt-1">
-            <BorderedText>
-              Passionate about computer architecture, programming, and
-              problem-solving. Enthusiastic video game player. Dedicated and
-              enjoy various forms of physical exercise and movement.
             </BorderedText>
           </div>
         </div>

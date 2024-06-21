@@ -4,8 +4,8 @@ type TextProps = {
 
 export default function SmallHeader({ text }: TextProps) {
   return (
-    <div className="text-xl">
-      <h1 className="font-medium">{text}</h1>
+    <div className="text-lg">
+      <div className="font-medium">{text}</div>
     </div>
   );
 }

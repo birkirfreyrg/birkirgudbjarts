@@ -21,7 +21,7 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col md:flex-row gap-4 border p-2 shadow-md w-11/12 md:w-4/5 h-screen md:h-auto cursor-pointer transition-opacity duration-500 ease-in-out hover:opacity-75"
+      className="flex flex-col md:flex-row gap-4 border rounded-md p-2 shadow-md w-11/12 md:w-4/5 h-screen md:h-auto cursor-pointer transition-opacity duration-500 ease-in-out hover:opacity-80"
     >
       <div className="order-2 md:order-1 gap-4 flex justify-center items-center w-full h-full md:h-auto">
         <Image
