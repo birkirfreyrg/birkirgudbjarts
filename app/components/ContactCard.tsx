@@ -10,7 +10,7 @@ import Facebook from "../components/Facebook";
 export default function ContactCard() {
   return (
     <div className="flex items-center justify-center w-full h-full md:gap-1 mt-14">
-      <div className="flex flex-wrap items-center justify-center bg-gray-800 w-11/12 md:w-2/4 h-[600px] md:h-96 text-white text-lg px-2">
+      <div className="flex flex-wrap items-center justify-center bg-gray-800 border shadow-md rounded-lg w-11/12 md:w-2/4 h-[600px] md:h-96 text-white text-lg px-2">
         <div className="flex flex-col items-center justify-center w-full h-1/4 md:w-1/2 md:h-1/2 mt-2 md:mt-0">
           <Address />
           <MediumText text="Location:" />
