@@ -22,9 +22,9 @@ const ImageRightTextLeft: React.FC<ImageTextSplitProps> = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col md:flex-row gap-4 border rounded-md p-2 shadow-md w-11/12 md:w-4/5 h-screen md:h-auto cursor-pointer transition-opacity duration-500 ease-in-out hover:opacity-80"
+      className="flex flex-col md:flex-row gap-4 border rounded-md p-2 shadow-md w-11/12 md:w-4/5 cursor-pointer transition-opacity duration-500 ease-in-out hover:opacity-80"
     >
-      <div className="order-1 md:order-2 flex justify-center items-center w-full h-full md:h-auto">
+      <div className="order-1 md:order-2 flex justify-center items-center w-full">
         <Image
           src={imageUrl}
           alt={altText}
@@ -33,9 +33,8 @@ const ImageRightTextLeft: React.FC<ImageTextSplitProps> = ({
           className="border shadow-md"
         />
       </div>
-      <div className="flex flex-col justify-center items-center w-full h-full md:h-auto md:overflow-auto overflow-hidden">
+      <div className="flex flex-col justify-center items-center w-full md:overflow-auto overflow-hidden">
         <h3 className="font-extrabold text-2xl mb-4">{title}</h3>
-        {/* Map over the textContent array and render each item as a paragraph */}
         <div className="text-center">
           {textContent.map((paragraph, index) => (
             <p key={index} className="font-light mb-2">
