@@ -32,7 +32,7 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
           className="border shadow-md"
         />
       </div>
-      <div className="order-1 md:order-2 flex flex-col justify-center items-center w-full h-full md:h-auto md:overflow-auto">
+      <div className="order-1 md:order-2 flex flex-col justify-center items-center w-full h-full md:h-auto md:overflow-auto overflow-hidden">
         <h3 className="font-extrabold text-2xl mb-4">{title}</h3>
         {/* Map over the textContent array and render each item as a paragraph */}
         <div className="text-center">
