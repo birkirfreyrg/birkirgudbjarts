@@ -28,8 +28,8 @@ const ImageRightTextLeft: React.FC<ImageTextSplitProps> = ({
         <Image
           src={imageUrl}
           alt={altText}
-          width={300}
-          height={300}
+          width={500}
+          height={500}
           className="border shadow-md"
         />
       </div>

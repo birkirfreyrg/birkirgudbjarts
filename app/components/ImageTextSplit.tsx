@@ -27,9 +27,9 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
         <Image
           src={imageUrl}
           alt={altText}
-          width={300}
-          height={300}
-          className="border shadow-md"
+          width={500}
+          height={500}
+          className="border shadow-md max-h-max max-w-max"
         />
       </div>
       <div className="order-1 md:order-2 flex flex-col justify-center items-center w-full md:overflow-auto">
