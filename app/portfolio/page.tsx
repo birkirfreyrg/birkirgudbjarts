@@ -27,7 +27,7 @@ export default function page() {
         <Nav />
         <div className="flex flex-col gap-8 justify-center items-center w-full mt-14 mb-14">
           <ImageTextSplit
-            imageUrl="/agnesknitting.png"
+            imageUrl="/agnesKnitting.png"
             altText="Agnes Knitting"
             title="Agnes Knitting: A Work in Progress"
             textContent={[
