@@ -3,7 +3,7 @@ export default function Bio() {
     <div className="flex justify-center items-center sm:w-2/3 w-full p-4">
       <div className="bg-white shadow-md rounded-lg p-6">
         <h3 className="text-xl font-bold mb-4">About Me</h3>
-        <div className="text-gray-800 font-light">
+        <div className="text-gray-800 font-light text-justify">
           <p className="mb-4">
             I am a highly skilled and motivated individual with a Bachelor of
             Science in Computer Science from the University of Iceland. My

@@ -1,58 +1,65 @@
 "use client";
-import { useState } from "react";
 
-const HamburgerMenu = () => {
+import { useState } from "react";
+import HamburgerIcon from "./HamburgerIcon";
+import Link from "next/link";
+import ClickAwayListener from "react-click-away-listener";
+import XIcon from "./XIcon";
+
+export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <div className="relative md:hidden">
-      {/* Hidden on large screens and above */}
-      <button
-        className="flex flex-col h-12 w-12 rounded justify-center items-center group"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <div
-          className={`h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 ${
-            isOpen ? "rotate-45 translate-y-3.5" : ""
-          }`}
-        ></div>
-        <div
-          className={`h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 ${
-            isOpen ? "opacity-0" : ""
-          }`}
-        ></div>
-        <div
-          className={`h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 ${
-            isOpen ? "-rotate-45 -translate-y-3.5" : ""
-          }`}
-        ></div>
-      </button>
-      <div
-        className={`absolute top-16 left-0 w-48 bg-white shadow-lg rounded-lg transition duration-300 ${
-          isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-        style={{ top: "3rem", left: "0" }}
-      >
-        <ul className="flex flex-col p-4">
-          <li className="py-2">
-            <a href="/">home</a>
-          </li>
-          <li className="py-2">
-            <a href="/bio">bio</a>
-          </li>
-          <li className="py-2">
-            <a href="/resume">resume</a>
-          </li>
-          <li className="py-2">
-            <a href="/portfolio">portfolio</a>
-          </li>
-          <li className="py-2">
-            <a href="contact">contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+  const handleClickAway = () => {
+    setIsOpen(false);
+  };
 
-export default HamburgerMenu;
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <ClickAwayListener onClickAway={handleClickAway}>
+      <div className="md:hidden flex">
+        <button
+          onClick={toggleMenu}
+          className="block p-4 focus:outline-none z-50 relative"
+        >
+          {isOpen ? <XIcon /> : <HamburgerIcon />}
+        </button>
+        <nav
+          className={`fixed top-0 left-0 w-1/2 pt-20 h-full bg-white flex  transition-transform transform ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          } z-40`}
+        >
+          <ul className="flex flex-col pl-12 space-y-8">
+            <li>
+              <Link href="/" className="text-2xl">
+                home
+              </Link>
+            </li>
+            <li>
+              <Link href="/bio" className="text-2xl">
+                bio
+              </Link>
+            </li>
+            <li>
+              <Link href="/resume" className="text-2xl">
+                resume
+              </Link>
+            </li>
+            <li>
+              <Link href="/portfolio" className="text-2xl">
+                portfolio
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="text-2xl">
+                contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </ClickAwayListener>
+  );
+}

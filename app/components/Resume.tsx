@@ -6,7 +6,7 @@ import References from "./References";
 
 export default function Resume() {
   return (
-    <div className="flex flex-col justify-center items-center sm:w-2/3 w-full p-4">
+    <div className="flex flex-col justify-center text-justify items-center sm:w-2/3 w-full p-4">
       <div className="bg-white shadow-md rounded-lg p-6">
         <div className="mb-4">
           <SmallHeader text="About me" />

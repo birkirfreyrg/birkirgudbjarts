@@ -21,7 +21,7 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col md:flex-row gap-4 border rounded-md p-2 shadow-md w-11/12 md:w-4/5 cursor-pointer transition-opacity duration-500 ease-in-out hover:opacity-80"
+      className="flex flex-col md:flex-row gap-4 rounded-md p-2 shadow-md w-11/12 md:w-4/5 cursor-pointer transition duration-1000 lg:hover:scale-105"
     >
       <div className="order-2 md:order-1 gap-4 flex justify-center items-center w-full">
         <Image
@@ -29,12 +29,12 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
           alt={altText}
           width={500}
           height={500}
-          className="border shadow-md max-h-max max-w-max"
+          className="border shadow-md max-h-max"
         />
       </div>
       <div className="order-1 md:order-2 flex flex-col justify-center items-center w-full md:overflow-auto">
         <h3 className="font-extrabold text-2xl mb-4">{title}</h3>
-        <div className="text-center">
+        <div className="text-justify">
           {textContent.map((paragraph, index) => (
             <p key={index} className="font-light mb-2">
               {paragraph}
