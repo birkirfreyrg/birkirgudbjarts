@@ -1,6 +1,6 @@
 export default function Bio() {
   return (
-    <div className="flex justify-center items-center sm:w-2/3 w-full p-4">
+    <div className="flex justify-center items-center lg:mt-12 sm:w-2/3 w-full p-4">
       <div className="bg-white shadow-md rounded-lg p-6">
         <h3 className="text-xl font-bold mb-4">About Me</h3>
         <div className="text-gray-800 font-light text-justify">
