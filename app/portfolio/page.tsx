@@ -19,6 +19,10 @@ export default function page() {
     TypeScript: By incorporating TypeScript, I ensure a safer and more reliable codebase, catching errors early in the development process and providing a smoother development experience.
     Tailwind CSS: For styling, I have opted for Tailwind CSS, which allows for rapid customization and a modern, sleek design that complements the elegance of Agnes's knitting work.`;
   const agnesKnittingDescription3 = `Database Integration: While the specific database service is yet to be finalized, I am evaluating several options to ensure optimal performance, scalability, and security. The database will be a critical component, managing user data, product information, and content efficiently.`;
+
+  const ordidDescription1 = `A Wordle-inspired Icelandic word puzzle game built with React.js, Next.js, and TypeScript.`;
+  const ordidDescription2 = `ORÐIÐ challenges players to guess five-letter Icelandic words in six attempts, with color-coded feedback guiding each guess. The game’s interface is designed using Tailwind CSS for a responsive, clean, and modern look across devices.`;
+  const ordidDescription3 = `This project demonstrates skills in building dynamic, interactive applications with a strong focus on user experience and interface styling.`;
   return (
     <>
       <HamburgerMenu />
@@ -26,6 +30,17 @@ export default function page() {
         <Title title="Portfolio" />
         <Nav />
         <div className="flex flex-col gap-8 justify-center items-center w-full mt-14 mb-14">
+          <ImageRightTextLeft
+            imageUrl="/ordid.png"
+            altText="Orðið"
+            title="ORÐIÐ"
+            textContent={[
+              ordidDescription1,
+              ordidDescription2,
+              ordidDescription3,
+            ]}
+            link="https://ordid.vercel.app/"
+          />
           <ImageTextSplit
             imageUrl="/agnesKnitting.png"
             altText="Agnes Knitting"
