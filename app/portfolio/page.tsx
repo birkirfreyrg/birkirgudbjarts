@@ -6,22 +6,38 @@ import Title from "../components/Title";
 import Wrapper from "../components/Wrapper";
 
 export default function page() {
-  const oceanViewDescription1 = `"Ocean View Iceland" represents the pinnacle of digital craftsmanship, encapsulating an exquisite frontend project for a premier suite offering. Developed utilizing the synergistic power of Next.js and React.js, this website is typed with JavaScript and styled with the precision of Tailwind CSS, ensuring a seamless and responsive user experience.`;
-  const oceanViewDescription2 = `Designed to highlight the natural beauty and quiet luxury of the Ocean View suite in Iceland, our platform utilizes advanced technology to craft an inviting and interactive online presence. Emphasizing ease of navigation and visual appeal, the website encourages visitors to discover the unique amenities and stunning views available at Ocean View Iceland.`;
-  const moviesAndEpisodesDescription1 = `"Movies and Episodes" represents the zenith of digital innovation, catering to both movie buffs and series enthusiasts. This dynamic app is meticulously crafted to help users organize and track their viewing habits with utmost efficiency. With "Movies and Episodes," users can create a personalized watchlist of movies and TV show episodes, ensuring they never miss a moment of their favorite entertainment.`;
-  const moviesAndEpisodesDescription2 = `Built using the powerful combination of Next.js and React.js, this app is typed with JavaScript and styled with the precision of Tailwind CSS, guaranteeing a seamless and responsive user experience. Furthermore, MongoDB serves as the robust database backbone, ensuring reliable and efficient data management.`;
-  const moviesAndEpisodesDescription3 = `The app not only keeps a record of completed movies and episodes, providing a gratifying sense of accomplishment, but it also excels in managing ongoing series by tracking in-progress episodes. This feature makes it effortless to resume watching exactly where you left off. Whether you're a casual viewer or a dedicated binge-watcher, "Movies and Episodes" is your ultimate companion for navigating the expansive world of cinematic and television content.`;
-  const agnesKnittingDescription1 = `Welcome to Agnes Knitting, a forthcoming website dedicated to showcasing the exquisite craftsmanship and creative prowess of the talented knitter, Agnes. Currently under development, this project is being meticulously crafted using the latest web technologies to ensure a seamless and delightful user experience.`;
-  const agnesKnittingDescription2 = `Technologies in Use
+  const oceanViewDescription1 = `Ocean View Iceland is a beautifully crafted frontend project designed to showcase the quiet luxury and natural beauty of the Ocean View suite in Iceland. The website combines elegance with functionality, providing visitors with an engaging, visually appealing platform to explore the suite's unique features and stunning views. Thoughtfully designed for easy navigation, the platform enhances the online experience, inviting users to discover the charm of Ocean View Iceland.`;
+  const oceanViewDescription2 = `Technologies in Use
+    Next.js: Chosen for its performance benefits, enabling server-side rendering and static generation to create a fast and SEO-optimized site.
+    React.js: Utilized for its component-based structure, delivering a responsive and interactive user experience.
+    JavaScript: Powers the site’s functionality, ensuring smooth interactions and rich interactivity.
+    Tailwind CSS: Provides efficient and precise styling, contributing to a modern, seamless design that adapts beautifully across different devices.`;
+  const oceanViewDescription3 = `This project demonstrates skills in building refined, user-centric interfaces that are both technically sound and visually compelling.`;
+  const moviesAndEpisodesDescription1 = `Movies and Episodes is a dynamic app designed for movie lovers and series enthusiasts to organize and track their viewing effortlessly. With features for creating a personalized watchlist and tracking in-progress episodes, the app ensures users never lose track of where they left off in their favorite shows and movies. Movies and Episodes enhances the viewing experience by making it easy to manage completed content, providing a satisfying way to monitor progress and resume ongoing series at any time.`;
+  const moviesAndEpisodesDescription2 = `Technologies in Use
+    Next.js: Enables server-side rendering and static generation, enhancing app performance and SEO.
+    React.js: Provides a component-based structure for a responsive, interactive user experience.
+    JavaScript: Powers the app’s functionality, creating smooth interactions and engaging features.
+    Tailwind CSS: Enables precise, efficient styling, delivering a modern and adaptive design across devices.
+    MongoDB: Serves as the app’s database backbone, ensuring reliable, efficient data storage for user preferences and watchlists.`;
+  const moviesAndEpisodesDescription3 = `This project showcases expertise in building functional, user-focused applications with a seamless design and robust backend integration.`;
+  const agnesKnittingDescription1 = `Agnes Knitting is a project currently under development, dedicated to highlighting the exquisite craftsmanship of Agnes, a talented knitter. The website is designed to deliver a seamless, engaging user experience, carefully built with modern web technologies for both functionality and aesthetics.`;
+  const agnesKnittingDescription2 = `Technologies in Use:
+  Next.js: Chosen for its robust features in building high-performance web applications, Next.js enables server-side rendering and static site generation, enhancing both site speed and SEO.
+React: Using React's component-based architecture, I am creating a dynamic, responsive user interface that is visually appealing and easy to navigate.
+TypeScript: Integrating TypeScript for a more reliable codebase, allowing early error detection and contributing to a smoother development process.
+Tailwind CSS: Tailwind CSS enables rapid customization and modern design, perfectly complementing the elegance of Agnes's work.`;
+  const agnesKnittingDescription3 = `Database Integration:
+  I am using MongoDB to store structured data, such as information and image URLs, while AWS S3 buckets handle image uploads. For each new item, images are uploaded to S3, and the resulting URLs are stored in MongoDB, ensuring efficient data management and scalable storage for media assets.`;
 
-    Next.js: My choice of framework for its robustness and efficiency in building high-performance web applications. Next.js allows for server-side rendering and static site generation, which will enhance the speed and SEO-friendliness of Agnes Knitting.
-    React: Leveraging the power of React for its component-based architecture, I aim to create a dynamic and responsive user interface that is both intuitive and visually appealing.
-    TypeScript: By incorporating TypeScript, I ensure a safer and more reliable codebase, catching errors early in the development process and providing a smoother development experience.
-    Tailwind CSS: For styling, I have opted for Tailwind CSS, which allows for rapid customization and a modern, sleek design that complements the elegance of Agnes's knitting work.`;
-  const agnesKnittingDescription3 = `Database Integration: While the specific database service is yet to be finalized, I am evaluating several options to ensure optimal performance, scalability, and security. The database will be a critical component, managing user data, product information, and content efficiently.`;
+  const agnesKnittingDescription4 = `I developed an admin panel with secure Google API authentication, allowing only authorized admin accounts to log in. The panel provides comprehensive control over site content, enabling updates to images, text, and more to keep the site fresh and dynamic.`;
 
-  const ordidDescription1 = `A Wordle-inspired Icelandic word puzzle game built with React.js, Next.js, and TypeScript.`;
-  const ordidDescription2 = `ORÐIÐ challenges players to guess five-letter Icelandic words in six attempts, with color-coded feedback guiding each guess. The game’s interface is designed using Tailwind CSS for a responsive, clean, and modern look across devices.`;
+  const ordidDescription1 = `ORÐIÐ is a Wordle-inspired Icelandic word puzzle game where players are challenged to guess five-letter Icelandic words in six attempts. Each guess receives color-coded feedback, guiding players toward the correct answer. The game offers an engaging, language-based challenge with a clean and responsive design, ensuring a seamless experience across devices.`;
+  const ordidDescription2 = `Technologies in Use
+    React.js: Provides a component-based architecture, enhancing the interactivity and responsiveness of the game.
+    Next.js: Enables server-side rendering and static site generation, optimizing the app for both performance and SEO.
+    TypeScript: Ensures a robust and reliable codebase, catching potential errors early in development.
+    Tailwind CSS: Used for styling, delivering a modern, streamlined look that adapts beautifully across devices and screen sizes.`;
   const ordidDescription3 = `This project demonstrates skills in building dynamic, interactive applications with a strong focus on user experience and interface styling.`;
   return (
     <>
@@ -44,11 +60,12 @@ export default function page() {
           <ImageTextSplit
             imageUrl="/agnesKnitting.png"
             altText="Agnes Knitting"
-            title="Agnes Knitting: A Work in Progress"
+            title="Agnes Knitting: A Forthcoming Showcase of Artisanal Knitting"
             textContent={[
               agnesKnittingDescription1,
               agnesKnittingDescription2,
               agnesKnittingDescription3,
+              agnesKnittingDescription4,
             ]}
             link="https://agnesknitting.vercel.app/"
           />
@@ -68,7 +85,11 @@ export default function page() {
             imageUrl="/oceanViewPhoto.PNG"
             altText="OceanView"
             title="Ocean View Iceland"
-            textContent={[oceanViewDescription1, oceanViewDescription2]}
+            textContent={[
+              oceanViewDescription1,
+              oceanViewDescription2,
+              oceanViewDescription3,
+            ]}
             link="https://oceanviewiceland.vercel.app/"
           />
         </div>

@@ -34,7 +34,7 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
       </div>
       <div className="order-1 md:order-2 flex flex-col justify-center items-center w-full md:overflow-auto">
         <h3 className="font-extrabold text-2xl mb-4">{title}</h3>
-        <div className="text-justify">
+        <div className="text-justify preserveWhitespace">
           {textContent.map((paragraph, index) => (
             <p key={index} className="font-light mb-2">
               {paragraph}

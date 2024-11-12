@@ -35,7 +35,7 @@ const ImageRightTextLeft: React.FC<ImageTextSplitProps> = ({
       </div>
       <div className="flex flex-col justify-center items-center w-full md:overflow-auto overflow-hidden">
         <h3 className="font-extrabold text-2xl mb-4">{title}</h3>
-        <div className="text-justify">
+        <div className="text-justify preserveWhitespace">
           {textContent.map((paragraph, index) => (
             <p key={index} className="font-light mb-2">
               {paragraph}
