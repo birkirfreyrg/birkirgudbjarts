@@ -60,7 +60,7 @@ Tailwind CSS: Tailwind CSS enables rapid customization and modern design, perfec
           <ImageTextSplit
             imageUrl="/agnesKnitting.png"
             altText="Agnes Knitting"
-            title="Agnes Knitting: A Forthcoming Showcase of Artisanal Knitting"
+            title="Agnes Knitting"
             textContent={[
               agnesKnittingDescription1,
               agnesKnittingDescription2,
